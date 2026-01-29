@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+/* -----------------------------
+   DESIGN TOKENS
+------------------------------ */
+
+:root {
+  /* Light mode */
+  --bg-base: hsl(0 0% 98%);
+  --bg-elevated: hsl(0 0% 100%);
+  --text-primary: hsl(217 20% 12%);
+  --text-secondary: hsl(0 0% 45%);
+  --border: hsl(0 0% 88%);
+
+  --brand: hsl(244 58% 51%);
+  --brand-hover: hsl(244 58% 45%);
+  --accent: hsl(258 70% 60%);
+  --success: hsl(142 76% 45%);
+  --warning: hsl(38 92% 50%);
+  --danger: hsl(0 84% 60%);
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+}
+
+/* Dark mode (primary) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-base: hsl(217 20% 12%);
+    --bg-elevated: hsl(217 18% 16%);
+    --text-primary: hsl(0 0% 98%);
+    --text-secondary: hsl(0 0% 71%);
+    --border: hsl(217 15% 24%);
+  }
+}
+
+/* -----------------------------
+   BASE STYLES
+------------------------------ */
+
+body {
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* -----------------------------
+   COMPONENT CLASSES
+------------------------------ */
+
+.card {
+  background-color: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 1.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-primary);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--brand);
+}
+
+.btn-primary {
+  background: var(--brand);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+}
+
+.btn-primary:hover {
+  background: var(--brand-hover);
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+}
