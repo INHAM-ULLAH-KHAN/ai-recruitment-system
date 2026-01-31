@@ -1,44 +1,57 @@
 # AI Recruitment System
 
-An AI-powered web application built using **Flask** and modern web development practices. This project demonstrates user authentication (login & registration) and a backend structure ready for future AI/ML integrations.
+A full-stack, AI-ready recruitment platform built with a **Next.js frontend** and a **Python-based backend**. This project is designed as a scalable system that demonstrates modern web development practices and prepares the foundation for AI/ML-driven recruitment features.
 
 ---
 
 ## 🧠 Project Overview
 
-This system is a full-stack web application showcasing:
+The AI Recruitment System is a full-fledged web application that includes:
 
-- User authentication (login & registration pages)  
-- REST API endpoints with Flask  
-- Modular project structure for maintainability  
-- Foundation for AI/ML features like resume parsing and candidate scoring  
+- A modern frontend built with **Next.js**
+- A backend API built using **Python**
+- User authentication and role-based access
+- Modular architecture suitable for production-level applications
+- A foundation for AI features such as resume parsing, candidate screening, and ranking
 
-This project highlights skills in both **software development** and **preparing AI-driven applications**.
+This project reflects real-world full-stack development patterns rather than a simple demo or UI-only application.
 
 ---
 
 ## 🚀 Features
 
-- **Authentication UI:** Login and registration pages  
-- **Backend API:** Built with Flask  
-- **Clean Project Structure:** Organized for easy extension  
-- **Ready for AI Integration:** Can add machine learning modules  
+- **Frontend:** Built with Next.js for fast, scalable UI
+- **Backend:** Python-based REST API
+- **Authentication:** Login and registration system
+- **API Integration:** Frontend and backend communication
+- **Scalable Architecture:** Designed for future AI/ML integration
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** HTML, CSS, JavaScript  
-- **Backend:** Python, Flask  
-- **Database:** SQLite (or your choice)  
-- **Version Control:** Git & GitHub  
-- **Future Ready:** AI/ML integration  
+### Frontend
+- Next.js
+- React
+- HTML5, CSS3, JavaScript
+
+### Backend
+- Python
+- Flask / FastAPI
+- RESTful APIs
+
+### Tools & Workflow
+- Git & GitHub
+- Virtual Environments
+- API-based architecture
 
 ---
 
-## 📦 Installation
+## 📦 Installation & Setup
 
-1. Clone the repository:
+### Backend
 ```bash
-git clone https://github.com/INHAM-ULLAH-KHAN/ai-recruitment-system.git
-cd ai-recruitment-system
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python app.py
